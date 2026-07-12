@@ -1,0 +1,12 @@
+module MAC(a, b, valid, clk, clear, reset, sum);
+	input  logic [8] 	a, b; 							// Matrix cells
+	input  logic 		valid, clk, clear, reset; 	// Boring stuff
+	output logic [8]  aout, bout; 					// Pass along the data to the next
+	output logic [32] sum; 								// Total sum
+	
+	
+	always_ff @(posedge clk) begin
+	
+	
+	
+endmodule
