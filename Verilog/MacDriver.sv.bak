@@ -1,6 +1,0 @@
-module MacDriver(clk, reset, array);
-	'define m 3
-	'define n 5
-	'define p 2
-	
-	

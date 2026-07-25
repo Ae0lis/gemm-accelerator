@@ -1,0 +1,41 @@
+# Quartus
+db/
+incremental_db/
+output_files/
+greybox_tmp/
+*.qws
+*.rpt
+*.summary
+*.smsg
+*.pin
+*.done
+*.jdi
+*.sld
+*.qdf
+*.bak
+PLLJ_PLLSPE_INFO.txt
+c5_pin_model_dump.txt
+
+# Bitstreams
+*.sof
+*.pof
+*.jic
+*.rbf
+
+# Qsys generated
+soc_system/
+*.sopcinfo
+*.qip
+hps_isw_handoff/
+.qsys_edit/
+
+# ModelSim
+work/
+transcript
+*.wlf
+wlft*
+vsim_stacktrace.vstf
+
+# Python
+__pycache__/
+*.pyc

@@ -1,4 +1,7 @@
 """
+
+!!! CLAUDE GENERATED
+
 golden_model.py - int8 matmul reference (project step 1.0)
 
 The ORACLE for the whole project. Every RTL version you build later
