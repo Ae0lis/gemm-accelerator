@@ -204,6 +204,14 @@
          type = "String";
       }
    }
+   element soc_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
+      }
+   }
    element sysid_qsys
    {
       datum _sortIndex
@@ -1228,12 +1236,12 @@
    kind="reset"
    version="17.0"
    start="clk_0.clk_reset"
-   end="onchip_memory2_0.reset1" />
+   end="avalon_mm_slave_0.reset" />
  <connection
    kind="reset"
    version="17.0"
    start="clk_0.clk_reset"
-   end="avalon_mm_slave_0.reset_1" />
+   end="onchip_memory2_0.reset1" />
  <connection
    kind="reset"
    version="17.0"

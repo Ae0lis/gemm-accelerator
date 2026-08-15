@@ -3,6 +3,8 @@ db/
 incremental_db/
 output_files/
 greybox_tmp/
+hc_output/
+stamp/
 *.qws
 *.rpt
 *.summary
@@ -13,6 +15,7 @@ greybox_tmp/
 *.sld
 *.qdf
 *.bak
+*.srf
 PLLJ_PLLSPE_INFO.txt
 c5_pin_model_dump.txt
 
@@ -24,17 +27,47 @@ c5_pin_model_dump.txt
 
 # Qsys generated
 soc_system/
+soc_system.html
 *.sopcinfo
 *.qip
+*.cmp
+*.bsf
+*_bb.v
+*_inst.v
+*_inst.vhd
+*.debuginfo
 hps_isw_handoff/
 .qsys_edit/
+
+# HPS / DDR3 generated reports
+hps_sdram_p0_all_pins.txt
+hps_sdram_p0_summary.csv
+*.dts
+*.dtb
+
+# Preloader / U-Boot binaries
+preloader-mkpimage.bin
+u-boot.img
+
+# Quartus EDA netlist output
+simulation/
+*.svo
+*.vo
+*.xrf
+*.sft
 
 # ModelSim
 work/
 transcript
 *.wlf
 wlft*
-vsim_stacktrace.vstf
+*.vstf
+
+# Editor / OS
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
 
 # Python
 __pycache__/

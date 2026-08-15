@@ -9,6 +9,10 @@ vlog "./MAC.sv"
 vlog "./MacDriver.sv"
 vlog "./avalon_mm_slave.sv"
 vlog "./avalon_slave_test.sv"
+vlog "./mac_arr.sv"
+vlog "./mac_arr_test.sv"
+vlog "./arr_ram.sv"
+vlog "./arr_ram_test.sv"
 
 
 # Call vsim to invoke simulator
