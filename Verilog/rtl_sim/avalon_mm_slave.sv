@@ -1,7 +1,7 @@
 module avalon_mm_slave #(parameter N = 8, parameter [2:0] K = 7 /* Actually K - 1 */)( // Built for N = 8
 	input  logic 			clk,
 	input  logic 			reset,
-	input  logic [6:0] 	address, // 0-15 is reg, 16-31 is A, 32-47 is B, 64-128 is C.
+	input  logic [6:0] 	address, // 0-15 is reg, 16-31 is A, 32-47 is B, 64-127 is C.
 	input  logic 			read,
 	input  logic 			write,
 	input  logic [31:0] 	writedata,
