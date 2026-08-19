@@ -1,0 +1,7 @@
+Thu Jan  1 00:22:20 UTC 1970
+Linux de1soclinux 3.18.0 #9 SMP Mon Aug 8 17:11:41 EDT 2016 armv7l armv7l armv7l GNU/Linux
+fc47c0a0e6b34a4a48b6805612453d4a5e600fd22cf8666cf7d37f9332144d06  ./8x8_test
+Beginning basic tests
+System operational.
+Took 0.000002 seconds to execute
+Arrays match!
