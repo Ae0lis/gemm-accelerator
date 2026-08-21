@@ -10,6 +10,7 @@ Result: Correct 8×8 GEMM on hardware
 # What else is in this folder?
 A screenshot of the powershell window on success
 A timestamped printout of the command line
+A note about the number of warnings to expect when building the file
 
 # NOTE:
 Due to the DE1-SoC being unset, the timestamp is inaccurate. The original commit date for the hardware run is when it was tested, as can be seen by the file name.
