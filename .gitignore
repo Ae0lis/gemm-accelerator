@@ -59,9 +59,14 @@ simulation/
 # ModelSim
 work/
 transcript
+modelsim.ini
+vsim*.log
+modelsim*.log
 *.wlf
 wlft*
 *.vstf
+*.ucdb
+coverage/
 
 # Editor / OS
 *~
@@ -71,4 +76,11 @@ desktop.ini
 
 # Python
 __pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
 *.pyc
+
+# Native build outputs
+*.o
+*.obj
+*.exe
