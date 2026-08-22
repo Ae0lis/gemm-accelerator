@@ -89,11 +89,11 @@ For the 8x8 test, I compiled using `gcc -std=gnu99 basic_8x8_test.c -o 8x8_test 
 
 At the moment, this repo holds a functioning 8x8 GEMM accelerator, but it is not yet a proper systolic array. The next major update I want to do is to fix that. Once I have a properly functioning systolic array, I'll also put a bit more work into the interface. Ideally, I'll add a C program that lets you more easily load hex files into the accelerator, and I'll make it much easier to do work with non 8x8 arrays. Currently, to do any work with arrays of different sizes, you need to do quite a bit of heavy lifting on the software side. It would be ideal if I could make this easier on the hardware side, but if not, I'll at least create a proper software interface to use as a blueprint. A rough roadmap for all of this:
 
-- [X] Complete 8x8 broadcast array
-- [X] Verify on hardware (Completed August 2026)
-- [ ] Convert to a systolic array
-- [ ] Full interface completed and published
-- [ ] Final bug fixes and improvements, then this project is done!
+- [X] Complete 8x8 broadcast array  
+- [X] Verify on hardware (Completed August 2026)  
+- [ ] Convert to a systolic array  
+- [ ] Full interface completed and published  
+- [ ] Final bug fixes and improvements, then this project is done!  
 
 I'll also be doing a full writeup about my experience building this project. You can find the current version of it here: https://ae0lis.github.io/projects/gemm_accelerator/. This is still a provisional writeup, so expect some changes!
 
