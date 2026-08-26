@@ -65,7 +65,7 @@ To reproduce these results, you will need:
 
 After you have these, as well as the files in this repo, begin by flashing Linux onto the DE1-SoC and test that it worked with the default tests that come bundled with the image. Once it's functional, open the `.qpf` file in `de1_soc_GHRD`. You will need to regenerate the Qsys system. After that's done, compile the full design. This takes about 20 minutes, and should have 0 errors.
 
-[A note about warnings](Results/8x8%20Broadcast%20Array/build_notes).
+[A note about warnings](Results/8x8%20Broadcast%20Array/build_notes.md).
 
 Next, open the programmer, and connect your blaster cable to the FPGA (Linux should be booted and on during this step). Go to processing -> auto detect, and select the version ending with MA. Two devices will pop up. Right click the one that ends in MA, select "change file" and select the `.sof` file that pops up as an option. Check the Program/Configure box, then hit program. After that, once you have the C files over on the ARM chip (I recommend `ssh`ing into your Linux terminal and using `scp`) you can compile and run them to test it out! The 8x8 test has the golden model arrays preloaded to it, so you can just run the program and it will test the array automatically. It needs to access `/dev/mem`, which typically requires root access. 
 
