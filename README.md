@@ -2,6 +2,8 @@
 
 An INT8 matrix-multiplication accelerator implemented in SystemVerilog on the DE1-SoC, controlled by its ARM processor through Avalon-MM. Currently, this is a fixed 8x8 broadcast array, which has been successfully tested both in simulation and on the physical FPGA. In the future, I'll update it to a true systolic array, and improve handling of larger arrays.
 
+Writeup: https://ae0lis.github.io/projects/gemm_accelerator/.
+
 ## Demo and Current Results
 - Correct 8x8 GEMM on DE1-SoC
 - 64 parallel MAC units
@@ -96,9 +98,6 @@ At the moment, this repo holds a functioning 8x8 GEMM accelerator, but it is not
 - [ ] Convert to a systolic array  
 - [ ] Full interface completed and published  
 - [ ] Final bug fixes and improvements, then this project is done!  
-
-I'll also be doing a full writeup about my experience building this project. You can find the current version of it here: https://ae0lis.github.io/projects/gemm_accelerator/. This is still a provisional writeup, so expect some changes!
-
 ## Attribution
 
 The accelerator RTL, testbenches, Avalon-MM slave, and ARM-side driver were all written by me. `Verilog/de1_soc_GHRD/` is mostly from Terasic’s DE1-SoC GHRD version 13.1.0, but I added the custom accelerator component and Qsys integration. golden_model.py was initially generated using Claude, though I did review it by hand to make sure the math checked out.
